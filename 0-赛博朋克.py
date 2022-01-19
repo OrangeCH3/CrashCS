@@ -14,10 +14,12 @@ plt.style.use("cyberpunk")
 
 # 数据
 x = np.arange(-7, 7, 0.1)
+
 y1 = np.sin(x)
 y2 = np.sin(x) + x
 y3 = np.sin(x) * x
 y4 = np.sin(x) / x
+
 plt.plot(x, y1)
 plt.plot(x, y2)
 plt.plot(x, y3)
@@ -29,6 +31,3 @@ mplcyberpunk.make_lines_glow()
 mplcyberpunk.add_underglow()
 
 plt.show()
-
-# 保存图片
-# plt.savefig("cyberpunk.png")
